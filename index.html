@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <link rel="stylesheet" href="calculator css.css">
+    
+</head>
+<body>
+    <div>
+        <div class="frame">
+            <div class="display">
+                <h1 class="result"></h1>
+            </div>
+            <div class="number">
+                <h1 class="click1" onclick="operator(event)">%</h1>
+            </div>
+            <div class="number" style="margin-left: 150px; border-radius: 0px;">
+                <h1 class="click1" onclick="deleton(event)">CE</h1>
+            </div>
+            <div class="number" style="margin-left: 280px; border-radius: 0px;">
+                <h1 class="click1" onclick="deleton(event)">C</h1>
+            </div>
+            <div class="number" style="margin-left: 410px; border-radius: 0 10px 0 0;">
+                <h1 class="click1" onclick="deleton(event)"><ion-icon name="backspace-outline"></ion-icon></h1>
+            </div> 
+            <br>
+            <div class="next">
+                <div class="number" style="border-radius: 0;">
+                    <h1 class="click1" onclick="operator(event)">1/x</h1>
+                </div>
+                <div class="number" style="margin-left: 150px; border-radius: 0px;">
+                    <h1 class="click1" onclick="operator(event)">X²</h1>
+                </div>
+                <div class="number" style="margin-left: 280px; border-radius: 0px;">
+                    <h1 class="click1" onclick="operator(event)">√x</h1>
+                </div>
+                <div class="number" style="margin-left: 410px; border-radius: 0 0px 0 0;">
+                    <h1 class="div" onclick="operator(event)">/</h1>
+                </div> 
+            </div>
+            <br>
+            <div class="next" style="margin-top: 160px;">
+                <div class="number" style="border-radius: 0;">
+                    <h1 class="click1" onclick="change(event)">9</h1>
+                </div>
+                <div class="number" style="margin-left: 150px; border-radius: 0px;">
+                    <h1 class="click1" onclick="change(event)">8</h1>
+                </div>
+                <div class="number" style="margin-left: 280px; border-radius: 0px;">
+                    <h1 class="click1" onclick="change(event)">7</h1>
+                </div>
+                <div class="number" style="margin-left: 410px; border-radius: 0 0px 0 0;">
+                    <h1 class="mul" onclick="operator(event)">*</h1>
+                </div> 
+            </div>
+            <br>
+            <div class="next" style="margin-top: 240px;">
+                <div class="number" style="border-radius: 0;">
+                    <h1 class="click1" onclick="change(event)">6</h1>
+                </div>
+                <div class="number" style="margin-left: 150px; border-radius: 0px;">
+                    <h1 class="click1" onclick="change(event)">5</h1>
+                </div>
+                <div class="number" style="margin-left: 280px; border-radius: 0px;">
+                    <h1 class="click1" onclick="change(event)">4</h1>
+                </div>
+                <div class="number" style="margin-left: 410px; border-radius: 0 0px 0 0;">
+                    <h1 class="sub" onclick="operator(event)">-</h1>
+                </div> 
+            </div>
+            <br>
+            <div class="next" style="margin-top: 320px;">
+                <div class="number" style="border-radius: 0;">
+                    <h1 class="click1" onclick="change(event)">3</h1>
+                </div>
+                <div class="number" style="margin-left: 150px; border-radius: 0px;">
+                    <h1 class="click1" onclick="change(event)">2</h1>
+                </div>
+                <div class="number" style="margin-left: 280px; border-radius: 0px;">
+                    <h1 class="click1" onclick="change(event)">1</h1>
+                </div>
+                <div class="number" style="margin-left: 410px; border-radius: 0 0px 0 0;">
+                    <h1 class="add" onclick="operator(event)">+</h1>
+                </div> 
+            </div>
+            <br>
+            <div class="next" style="margin-top: 400px;">
+                <div class="number" style="border-radius: 0 0 0 10px;">
+                    <h1 class="click1" onclick="change(event)">+/-</h1>
+                </div>
+                <div class="number" style="margin-left: 150px; border-radius: 0px;">
+                    <h1 class="click1" onclick="change(event)">0</h1>
+                </div>
+                <div class="number" style="margin-left: 280px; border-radius: 0px;">
+                    <h1 class="click1" onclick="change(event)">.</h1>
+                </div>
+                <div class="number" style="margin-left: 410px; border-radius: 0 0px 10px 0;">
+                    <h1 class="ans" onclick="answer(event)">=</h1>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script src="calculator ja.js"></script>
+</body>
+</html>
